@@ -10,7 +10,7 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	$(CC) $(FLAGS) $(OBJS) -o $(NAME)
 
-%.o: %.cpp
+%.o: %.cpp PhoneBook.hpp Contact.hpp
 	$(CC) $(FLAGS) -c $< -o $@
 
 clean:

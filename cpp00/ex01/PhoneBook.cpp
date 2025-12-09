@@ -6,6 +6,16 @@ PhoneBook::PhoneBook()
 	this->_count = 0;
 }
 
+bool	isStringPrintable(std::string s)
+{
+	for (int i = 0;i < (int)s.length(); i++)
+	{
+		if (!std::isprint(s[i]))
+			return (false);
+	}
+	return (true);
+}
+
 std::string	PhoneBook::_getInput(std::string prompt)
 {
 	std::string input = "";
@@ -14,9 +24,9 @@ std::string	PhoneBook::_getInput(std::string prompt)
 		std::cout << prompt;
 		if (!std::getline(std::cin, input))
 			exit(0);
-		if (!input.empty())
+		if (!input.empty() && isStringPrintable(input))
 			break;
-		std::cout << "Field cannot be empty. Please try again" << std::endl;
+		std::cout << "Field cannot be empty or non-printable. Please try again" << std::endl;
 	}
 	return (input);
 }

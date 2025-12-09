@@ -28,10 +28,10 @@ void	Contact::displaySummary(int index) const
 
 void	Contact::displayDetails() const
 {
-	std::cout << "First Name:	" << this->_firstName << std::endl;
-	std::cout << "Last Name:	" << this->_lastName << std::endl;
-	std::cout << "NickName:		" << this->_nickName << std::endl;
-	std::cout << "Phone number:	" << this->_phoneNumber << std::endl;
-	std::cout << "Darkest Secret:	" << this->_darkestSecret << std::endl;
+	std::cout << "First Name: " << this->_firstName << std::endl;
+	std::cout << "Last Name: " << this->_lastName << std::endl;
+	std::cout << "NickName: " << this->_nickName << std::endl;
+	std::cout << "Phone number: " << this->_phoneNumber << std::endl;
+	std::cout << "Darkest Secret: " << this->_darkestSecret << std::endl;
 }
 

@@ -11,7 +11,7 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	$(CC) $(FLAGS) $(OBJS) -o $(NAME)
 
-%.o: %.cpp
+%.o: %.cpp Account.hpp
 	$(CC) $(FLAGS) -c $< -o $@
 
 clean:
@@ -22,4 +22,3 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re

@@ -8,11 +8,8 @@ int main(void)
 	while (true)
 	{
 		std::cout << "\n> Enter command (ADD, SEARCH, EXIT): ";
-		
-		// Capture input and handle EOF (Ctrl+D)
 		if (!std::getline(std::cin, command))
 			break;
-
 		if (command == "ADD")
 		{
 			book.addContact();
@@ -27,7 +24,7 @@ int main(void)
 		}
 		else
 		{
-			std::cout << "Unknown command." << std::endl;
+			std::cout << "Unkown command." << std::endl;
 		}
 	}
 	return (0);
