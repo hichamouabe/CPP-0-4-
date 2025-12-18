@@ -2,7 +2,6 @@
 #include <iostream>
 
 int main(int argc, char **argv) {
-    // Check args: Program + filename + s1 + s2 = 4 args
     if (argc != 4) {
         std::cerr << "Usage: ./sed_losers <filename> <s1> <s2>" << std::endl;
         return 1;

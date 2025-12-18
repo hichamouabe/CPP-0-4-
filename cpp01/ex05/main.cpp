@@ -16,7 +16,7 @@ int main() {
     harl.complain("ERROR");
 
     std::cout << "\n--- INVALID ---" << std::endl;
-    harl.complain("UNKNOWN"); // Should print nothing
+    harl.complain("UNKNOWN");
 
     return 0;
 }

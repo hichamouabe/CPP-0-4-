@@ -6,7 +6,7 @@
 class HumanB {
 private:
     std::string _name;
-    Weapon* _weapon; // Pointer: Can be null, can change
+    Weapon* _weapon;
 
 public:
     HumanB(std::string name);
