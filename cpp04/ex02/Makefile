@@ -1,8 +1,9 @@
-NAME        = bsp
+NAME        = 
+
 CC          = c++
 CPPFLAGS    = -Wall -Wextra -Werror -std=c++98
-HEADERS     = Fixed.hpp  Point.hpp
-SRCS        = main.cpp Fixed.cpp Point.cpp bsp.cpp
+HEADERS     = 
+SRCS        = 
 OBJS        = $(SRCS:.cpp=.o)
 
 all: $(NAME)
@@ -20,4 +21,3 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
-

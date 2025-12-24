@@ -1,8 +1,9 @@
-NAME        = bsp
+NAME        = Animal
+
 CC          = c++
 CPPFLAGS    = -Wall -Wextra -Werror -std=c++98
-HEADERS     = Fixed.hpp  Point.hpp
-SRCS        = main.cpp Fixed.cpp Point.cpp bsp.cpp
+HEADERS     = Animal.hpp  Cat.hpp  Dog.hpp  WrongAnimal.hpp  WrongCat.hpp 
+SRCS        = Animal.cpp  Cat.cpp  Dog.cpp  main.cpp	WrongAnimal.cpp  WrongCat.cpp
 OBJS        = $(SRCS:.cpp=.o)
 
 all: $(NAME)

@@ -16,7 +16,8 @@ Fixed::Fixed(const float n) {
 
 Fixed::Fixed(const Fixed& other) {
     std::cout << "Copy constructor called" << std::endl;
-    this->_fixedPointValue = other.getRawBits();
+    //this->_fixedPointValue = other.getRawBits();
+    *this = other;
 }
 
 Fixed& Fixed::operator=(const Fixed& other) {
