@@ -22,5 +22,8 @@ int main() {
   for (int k = 0; k < arraySize; k++)
     delete animals[k];
 
+
+    //AAnimal animal;
+
   return 0;
 }

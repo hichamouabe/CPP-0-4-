@@ -23,8 +23,9 @@ int main() {
     delete animals[k];
 
   std::cout << "----- Deep Copy Test -----" << std::endl;
- 	Animal *test = new Dog();
-	Animal *copy = new Dog(*test);
+ 	Dog *test = new Dog();
+	Dog *copy = new Dog(*test);
+
 	delete test;
 	delete copy;
 

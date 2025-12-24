@@ -5,9 +5,9 @@
 #include "WrongCat.hpp"
 
 int main() {
-    const Animal* meta = new Animal();
-    const Animal* j = new Dog();
-    const Animal* i = new Cat();
+    Animal* meta = new Animal();
+    Animal* j = new Dog();
+    Animal* i = new Cat();
 
     std::cout << j->getType() << " " << std::endl;
     std::cout << i->getType() << " " << std::endl;
@@ -22,8 +22,8 @@ int main() {
 
     std::cout << "----- Wrong Animal Test -----" << std::endl;
 
-    const WrongAnimal* wrongMeta = new WrongAnimal();
-    const WrongAnimal* wrongI = new WrongCat();
+    WrongAnimal* wrongMeta = new WrongAnimal();
+    WrongAnimal* wrongI = new WrongCat();
 
     std::cout << wrongI->getType() << " " << std::endl;
     wrongI->makeSound();
